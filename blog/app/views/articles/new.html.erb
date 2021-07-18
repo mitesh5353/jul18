@@ -1,0 +1,17 @@
+<CENTER><h1>New Article</h1></CENTER><hr>
+<CENTER>
+<%= form_for :article, url: articles_path do |f| %>
+  <p>
+    <h2>Title</h2>
+    <%= f.text_field :title %>
+  </p>
+ 
+  <p>
+    <h3>Text</h3>
+    <%= f.text_area :text %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+</CENTER>
